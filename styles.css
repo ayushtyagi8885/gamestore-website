@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  header {
+    background: #1e1e1e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    margin-left: 20px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav ul li a:hover {
+    color: #ff5722;
+  }
+  
+  /* Hero Section */
+  .hero {
+    border-color: #121212;
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6BLTJoO7C-2N6D1RsiBBMv9qIcJW4T0FHaw&s') no-repeat center center/cover;
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Search Section */
+  .search-section {
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    text-align: center;
+  }
+  
+  .search-section input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .search-section .btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-section .btn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Games Section */
+  .games-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .games-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff5722;
+  }
+  
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .game-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .game-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .game-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  .game-card p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ddd;
+  }
+  
+  .game-card .btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .game-card .btn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .checkout-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .checkout-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff5722;
+  }
+  
+  .checkout-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .checkout-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-card p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-card .btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .checkout-card .btn:hover {
+    background-color: #e64a19;
+  }
+  .login-icon {
+  
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .contact-section {
+    background-color: #1e1e1e;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #e64a19;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contact-form button {
+    background-color: #e64a19;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e64a19;
+  }                 
+
+
+
+
+
+  /* Login/Signup Page Styles */
+.login-page {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.login-container {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container table {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-container table td {
+    padding: 10px;
+}
+
+.login-container table td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.login-container input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.login-container input:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+.login-container button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #e64a19;
+}
+
+.login-container p a {
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
